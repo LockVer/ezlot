@@ -1,0 +1,136 @@
+@import './button.scss';
+@import url('https://fonts.font.im/css?family=Roboto|Roboto+Mono');
+// Add your project's common styles here
+
+$base-color: #5469D4;
+$background-color: #ffffff;
+$font-bold-color: #000000;
+$font-primary-color: #3C4257;
+$font-secondary-color: #8B9DB8;
+$bg-green: #CBF4C9;
+$font-green: #0E6245;
+$bg-yellow: #F8E5BA;
+$font-yellow: #9C3F0F;
+$error-color: #D32F2F;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Roboto';
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    min-width: 960px;
+}
+
+a {
+    text-decoration: none;
+    color: $font-primary-color;
+    font-size: 14px;
+
+    &:hover {
+        color: $base-color;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.no-select {
+    user-select: none;
+    /* 标准的 CSS3 语法 */
+    -webkit-user-select: none;
+    /* Chrome 和 Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE 10+ */
+}
+
+.home {
+    display: flex;
+    height: 100%;
+    padding: 2em;
+    flex-direction: column;
+}
+
+.menu-list {
+    font-family: 'Roboto';
+}
+
+.animation-content {
+    z-index: 999;
+}
+
+.b-tooltip.is-primary .tooltip-content {
+    background: $base-color !important;
+    color: white;
+}
+
+.b-tooltip.is-right.is-primary .tooltip-content::before {
+    border-right-color: $base-color !important;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100px;
+    color: #cccccc;
+    user-select: none;
+    transition: all 0.5s ease-in-out;
+
+    .icon {
+        margin-left: -12px;
+    }
+
+    &:hover {
+        color: $base-color;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top: .2em;
+    margin-bottom: .2em;
+
+    .button {
+        margin-right: .2em;
+        box-shadow: none;
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.pagination-list{
+    margin: 0!important;
+    li{
+        margin-top: 0!important;
+    }
+}
+.modal{
+    p{
+        margin-bottom: 0;
+    }
+}
+.content table td, .content table th{
+    vertical-align: middle!important;
+}
+.field-body,.media{
+    align-items: center!important;
+}
