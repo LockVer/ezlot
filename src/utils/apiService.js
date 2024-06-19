@@ -4,7 +4,7 @@ import { EventBus } from '@/eventBus';
 class ApiService {
   constructor(baseURL) {
     this.api = axios.create({
-      baseURL: baseURL || 'http://192.168.1.224:8082', // 你的API基础URL
+      baseURL: baseURL || 'https://ezlot-b-eu-prod-urlssdqqlp.eu-west-1.fcapp.run', // 你的API基础URL
       timeout: 600000, // 请求超时时间
     });
 
